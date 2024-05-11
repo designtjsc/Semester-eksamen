@@ -44,3 +44,31 @@
   #root, #__next {
     isolation: isolate;
   }
+
+    /*custome properties/attribute */
+:root{
+    font-family:"Ubuntu", sans-serif;
+
+    --color-black:#29292C;
+    --color-darkblue:#364055;
+    --color-midblue:#205165;
+    --color-lightblue:#2f7593;
+    --color-white:#f2f2f2;
+
+    --fw-regular: 300;
+    --fw-semi-bold: 400;
+    --fw-bold: 500;
+
+    --fs-200:20px;
+    --fs-300:22px;
+    --fs-400:33px;
+    --fs-500:40px;
+    --fs-600:96px;
+
+    --fs-body:var(--fs-300);
+    --fs-nav:var(--fs-500);
+    --fs-button:var(--fs-300);
+    --fs-headline:var(--fs-600);
+    --fs-heading:var(--fs-500);
+    --fs-sec-heading:var(--fs-400);
+}
