@@ -7,23 +7,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
 <!-- indhold i header -->
-   <header>
-    <div class="containerheader">
-        <a href="#"><img src="/img/logo.png" alt="multimediedesigner logo"></a>
-        <h1 class="fs-headline fw-bold">Freelance grafisk designer</h1>
-        <nav class="navigation">
-            <ul role="list" class="nav-list">
-                <il><a href="#">Projekter</a></il>
-                <il><a href="#">Om mig</a></il>
-                <il><a href="#">Kontakt</a></il>
-            </ul>
-        </nav>
-    </div>
+   <header class="containerheader">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#"><img src="/img/logo.png" alt="multimediedesigner logo"></a>
+                    <h1 class="fs-headline fw-bold">Freelance <br> grafisk designer </br></h1>
+<!--burgermenu button, aria control, fortæller hvad knappen skal kontroler-->
+                <button class="mobile-nav-toggle" aria-controls="navigation" aira-expanded="false">
+                    <img class="burger" src="/img/burger.svg" aria-hissen="true">
+                    <span class="vissually-hidden">menu</span>
+                </button>
+            <nav class="navigation">
+                <ul role="list" class="nav-list" id="navigation">
+                    <il><a href="#">Projekter</a></il>
+                    <il><a href="#">Om mig</a></il>
+                    <il><a href="#">Kontakt</a></il>
+                </ul>
+            </nav>
    </header>
 
    <main>
@@ -36,15 +41,14 @@
                     Velkommen
                 </h1>
                 <p class="fs-body fw-regular">
-                    hfuhhkjas 
+                    til T Schärfe design. Mit navn er Thea Schärfe og jeg er freelance grafisk designer. Som gerne vil hjælpe dig med dine udfordringer omkring dit visuelle brand både digitalt og fysisk.
                 </p>
                 <h2 class="fs-sec-heading fw-bold">
                     Jeg tilbyder
                 </h2>
                 <p lass="fs-body fw-regular">
-                    Design af.....
+                    Skræddersyede design, unik og personligt identitet design, Brugervenlighed, Godt samarbejde.
                 </p>
-
             </div>
         </div>
     </section>
@@ -52,9 +56,9 @@
 <!-- anden section, to produkter --> 
     <section>
         <div class="container">
-            <div class="even colums">
-                <div><img src="/img/pinving.png" width="500px" height="500px" alt=""></div>
-                <div><img src="/img/monky.png" width="675px" height="500" alt="projekt billede"></div>
+            <div class="even-colums">
+                <div><img src="/img/pinving.png"  alt=""></div>
+                <div><img src="/img/monky.png"  alt="projekt billede"></div>
             </div>
         </div>
     </section>
@@ -67,7 +71,8 @@
                     Skræddersyede og unikke designs lavet kun til dig.
                 </h2>
                 <p class="fs-body fw-regular">
-                    Jeg har persion for....
+                    Ved at samarbejde med mig får du en grafisk identitet, som vil give genkendelighed mellem alle dine medier og platforme.
+                    Jeg tror på, at det bedste samarbejde opstår, når kunden føler sig tryg gennem hele processen, dette gør at kontakten holdes og møder sættes op undervejs i processen.
                 </p>
             </div>
         </div>
