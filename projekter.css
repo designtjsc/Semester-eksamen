@@ -89,3 +89,40 @@
     #root, #__next {
       isolation: isolate;
     }
+  
+
+  /* styling */
+  body{
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
+    color: #29292C;
+  } 
+  
+  .containerheader{
+      background-image: url(/img/baner.jpg);
+      background-size:100%;
+      background-position-x: center;
+  }
+  
+  .container{
+      --max-width:1380px;
+      --padding:30px;
+  
+      width: min(var(--max-width),100% - var(--padding));
+      margin-inline: auto;  
+  }
+  
+  /* two projects beside echother*/
+.even-colums{
+    display:grid;
+    gap:30px;
+}
+
+@media (min-width:800px){
+    .even-colums{
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+        gap:30px;
+    }
+}
