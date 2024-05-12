@@ -91,7 +91,27 @@
     }
 }
 
+/*utility classes*/
+.visually-hidden {
+  position: absolute;
+position: absolute !important;
+width: 1px !important;
+height: 1px !important;
+padding: 0 !important;
+margin: -1px !important;
+overflow: hidden !important;
+clip: rect(0,0,0,0) !important;
+white-space: nowrap !important;
+border: 0 !important;
+}
+
 /* styling */
+body{
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  color: #29292C;
+} 
 
 .containerheader{
     background-image: url(/img/baner.jpg);
@@ -110,22 +130,47 @@
 
 /* two projects beside echother*/
 .even-colums{
-    display:flex;
+    display:grid;
     gap:30px;
-    width: 675px;
-    height: 675px;
 }
 
 @media (min-width:800px){
     .even-colums{
-        flex-direction: row;
-        flex-wrap:nowrap;
-        justify-content: center;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
     }
 }
-body{
-    font-family: var(--ff-body);
-    font-size: var(--fs-body);
-    font-weight: var(--fw-regular);
-    color: #29292C;
-} 
+
+/* navigation*/
+.containerheader{
+  padding: 30px;
+}
+
+.navigation{
+  margin-top:30px;
+}
+
+.nav-wrapper{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-nav-toggle{
+  display: none;
+}
+
+@media (max-width:800px){
+  .navigation{
+    display: none;
+  }
+
+  .mobile-nav-toggle{
+    display: block;
+    cursor: pointer;
+    background:transparent;
+    border: 0px;
+    padding: 8px;
+  }
+  
+}
