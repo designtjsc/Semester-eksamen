@@ -1,0 +1,166 @@
+/*custome properties/attribute */
+:root{
+    font-family:"Ubuntu", sans-serif;
+  
+    --color-black:#29292C;
+    --color-darkblue:#364055;
+    --color-midblue:#205165;
+    --color-lightblue:#2f7593;
+    --color-white:#f2f2f2;
+  
+    --fw-regular: 300;
+    --fw-semi-bold: 400;
+    --fw-bold: 500;
+  
+    --fs-200:20px;
+    --fs-300:22px;
+    --fs-400:33px;
+    --fs-500:40px;
+    --fs-600:500px;
+  
+    --fs-body:var(--fs-300);
+    --fs-nav:var(--fs-500);
+    --fs-button:var(--fs-300);
+    --fs-headline:var(--fs-600);
+    --fs-heading:var(--fs-500);
+    --fs-sec-heading:var(--fs-400);
+  }
+  
+  @media (max-width: 650px){
+    :root{
+        /*strørrelse ændre til*/
+        --fs-600:52px;
+        --fs-500:32px;
+        --fs-400:26px;
+        --fs-300:16px;
+        --fs-200:22px;
+  
+        --fs-body:var(--fs-300);
+        --fs-nav:var(--fs-400);
+        --fs-button:var(--fs-300);
+        --fs-headline:var(--fs-600);
+        --fs-heading:var(--fs-500);
+        --fs-sec-heading:var(--fs-400);
+    }
+  }
+  /*
+    1. Use a more-intuitive box-sizing model.
+  */
+  *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    /*
+      2. Remove default margin
+    */
+    * {
+      margin: 0;
+    }
+    /*
+      Typographic tweaks!
+      3. Add accessible line-height
+      4. Improve text rendering
+    */
+    body {
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    /*
+      5. Improve media defaults
+    */
+    img, picture, video, canvas, svg {
+      display: block;
+      max-width: 100%;
+    }
+    /*
+      6. Remove built-in form typography styles
+    */
+    input, button, textarea, select {
+      font: inherit;
+    }
+    /*
+      7. Avoid text overflows
+    */
+    p, h1, h2, h3, h4, h5, h6 {
+      overflow-wrap: break-word;
+    }
+    /*
+      8. Create a root stacking context
+    */
+    #root, #__next {
+      isolation: isolate;
+    }/* two projects beside echother*/
+
+.even-colums{
+    display:grid;
+    gap:30px;
+    padding: 30px;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    padding: 102px;
+    gap:200px;
+}
+
+.image{
+    height: 70px;
+    width: 70px;
+}
+.box > div{
+    width: 100px;
+    margin: 10px;
+    height: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+@media (min-width:700px){
+    .even-colums{
+        grid-auto-flow: column;
+        gap:60px;
+    }
+}
+
+/*text style*/
+.text{
+    text-align: center;
+}
+
+/*footer*/
+.footer{
+    display: flex;
+    background-color: #364055;
+    color: #f2f2f2;
+    padding: 0px 30px;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .footer div{
+    text-align: center;
+    padding: 30px 30px 15px 30px;
+  }
+  
+  .col-3{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footerlinks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  @media (min-width:800px){
+    .footer{
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+  }
