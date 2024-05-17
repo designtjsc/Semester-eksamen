@@ -18,7 +18,7 @@
     --fs-500:40px;
     --fs-600:500px;
   
-    --fs-body:var(--fs-300);
+    --fs-body:var(--fs-200);
     --fs-nav:var(--fs-500);
     --fs-button:var(--fs-300);
     --fs-headline:var(--fs-600);
@@ -90,43 +90,57 @@
       isolation: isolate;
     }/* two projects beside echother*/
 
+/* styling */
+body{
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
+    color: #29292C;
+  } 
+
 .even-colums{
     display:grid;
-    gap:30px;
+    gap:100px;
     padding: 30px;
 }
 
-.box{
+.photo{ /*photo of me*/
+    height: 700px;
+    align-items: center;
+}
+.box{ /*container for box's*/
     display: flex;
     flex-wrap: wrap;
-    height: 200px;
-    padding: 102px;
+    align-items:center;
+    padding: 120px 190px 190px 120px;
     gap:200px;
+    background-color: aqua;
 }
 
-.image{
+.image{ /*size for icons*/
     height: 70px;
     width: 70px;
 }
-.box > div{
-    width: 100px;
-    margin: 10px;
+.box > div{ /*box for icons*/
+    width: 70px;
     height: 10px;
     text-align: center;
     line-height: 75px;
     font-size: 30px;
+
 }
 
 @media (min-width:700px){
     .even-colums{
         grid-auto-flow: column;
-        gap:60px;
+        gap:100px;
     }
 }
 
 /*text style*/
 .text{
     text-align: center;
+    padding: 30px 60px;
 }
 
 /*footer*/
