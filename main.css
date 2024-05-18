@@ -170,6 +170,15 @@ nav li:first-child{ /*logo left side*/
 .menu-but{
   display: none;
 }
+/*from mobile to computer*/
+@media(max-width:800px){
+  .hide-on-mobile{
+      display: none;
+  }
+  .menu-but{
+      display: block;
+  }
+}
 
 /* two projects beside echother*/
 .even-colums{
