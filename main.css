@@ -12,13 +12,13 @@
   --fw-semi-bold: 400;
   --fw-bold: 500;
 
-  --fs-200:20px;
+  --fs-200:16px;
   --fs-300:22px;
   --fs-400:33px;
   --fs-500:40px;
-  --fs-600:96px;
+  --fs-600:500px;
 
-  --fs-body:var(--fs-300);
+  --fs-body:var(--fs-200);
   --fs-nav:var(--fs-500);
   --fs-button:var(--fs-300);
   --fs-headline:var(--fs-600);
@@ -29,7 +29,7 @@
 @media (max-width: 650px){
   :root{
       /*strørrelse ændre til*/
-      --fs-600:36px;
+      --fs-600:90px;
       --fs-500:32px;
       --fs-400:26px;
       --fs-300:16px;
@@ -90,8 +90,6 @@
     isolation: isolate;
   }
 
-    
-
 
 
 /* styling */
@@ -102,7 +100,11 @@ body{
   color: #29292C;
 } 
 
-.containerheader{
+.text{
+  padding: 30px 60px;
+}
+
+.containerheader{ /*head image*/
     background-image: url(/img/baner.jpg) ;
     background-size:cover;
     background-position-x: center;
@@ -110,19 +112,35 @@ body{
     min-height: 90vh;
 }
 
-.nav-list{
+/*header*/
+/*nav for computer*/
+nav ul{
+  width: 100%;
+  list-style: none;
   display: flex;
-  padding: 30px;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.container{
-    --max-width:1380px;
-    
-    text-align: center;
+nav li{
+ height: 50px; 
+}
 
-    width: min(var(--max-width),100% - var(--padding));
-    margin-inline: auto;  
+nav a{
+  height: 100%;
+  padding: 0 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #29292C;
+}
+
+nav a:hover{
+  color: #2f7593;
+}
+
+nav li:first-child{ /*logo left side*/
+  margin-right: auto;
 }
 
 /* two projects beside echother*/
@@ -136,63 +154,6 @@ body{
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
     }
-}
-
-/* navigation */
-.containerheader{
-  padding: 30px;
-}
-
-.primary-navigation{
-  margin-top:30px;
-}
-
-/*burgermenu*/
-.nav-wrapper{
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.mobile-nav-toggle{
-  display: none;
-}
-
-@media (max-width:800px){
-  .primary-navigation{
-    display: none;
-  }
-
-  .mobile-nav-toggle{
-    display:block;
-    cursor:pointer;
-    background: transparent;
-    border: 0;
-    padding: 0;
-  }
-  
-  .mobile-nav-toggle .icon-close{
-    display:none;
-  }
-}
-
-.opened{
-  display: block;
-  position: fixed;
-}
-
-/*utility classes, important, overruler alt andet*/
-.visually-hidden {
-  position: absolute;
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0,0,0,0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
 }
 
 /*footer*/
