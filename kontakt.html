@@ -10,8 +10,31 @@
     <link rel="stylesheet" href="kontakt.css">
 </head>
 <body>
-      <!--main-->
-   <main>
+    <!--header-->
+    <header class="containerheader">
+        <nav>
+            <!--nav for mobile-->
+            <ul class="sidebar">
+                <li onclick=hidesidebar()><a href="index.html"><img src="/img/closebutton.png" alt="" height="30"></a></li>
+                <il><a href="projekter.html">Projekter</a></il>
+                <il><a href="ommig.html">Om mig</a></il>
+                <il><a href="kontakt.html">Kontakt</a></il>
+            </ul>
+            <!--nav for computer-->
+            <ul>
+                <li><a href="index.html"><img src="/img/logo.png" alt="" height="85"></a></li>
+                <il class="hide-on-mobile"><a href="projekter.html">Projekter</a></il>
+                <il class="hide-on-mobile"><a href="ommig.html">Om mig</a></il>
+                <il class="hide-on-mobile"><a href="kontakt.html">Kontakt</a></il>
+                <li class="menu-but" onclick=showsidebar()><a href="#"><img src="/img/burgermenu.png" alt="" height="13"></a></li>
+            </ul>
+        </nav>
+        <h1 class="title">
+            Freelance <br> grafisk designer
+        </h1>
+    </header>
+<!--main-->
+<main>
     <section>
         <div class="container">
                 <div class="box">
@@ -30,8 +53,8 @@
                     <div class="kontakt">
                         <form action="submit-to-send">
                             <input type="text" id="fname" name="firstname" placeholder="Your name" required>
-                            <input type="text" id="lname" name="Email" placeholder="Your e-mail" required>
-                            <input type="text" id="lname" name="phone" placeholder="Your phone number">
+                            <input type="text" id="email" name="Email" placeholder="Your e-mail" required>
+                            <input type="text" id="phone" name="phone" placeholder="Your phone number">
                             <textarea id="subject" name="subject" placeholder="Write message" style="height:200px"></textarea>
                             <input type="submit" value="Submit"> <!--button-->
                         </form>
@@ -42,7 +65,6 @@
 </main> 
 
 <!--footer-->
-<footer>
     <footer>
         <div class="footer">
             <div class="col-1">
@@ -60,7 +82,17 @@
                 </div>     
             </div>
         </div>
-       </footer>   
-    </body>
+    </footer> 
+    <!--javesript-->
+   <script>
+    function showsidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display ='flex'
+    }
+    function hidesidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display ='none'
+    }
+</script>
 </body>
 </html>
