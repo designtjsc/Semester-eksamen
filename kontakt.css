@@ -91,21 +91,21 @@
     isolation: isolate;
   }
 
-*{
-  margin: 0;
-  padding: 0;
-}
 
 /* styling */
 body{
-  font-family: var(--ff-body);
+  font-family: var(--ff-Ubuntu);
   font-size: var(--fs-body);
   font-weight: var(--fw-regular);
   color: #29292C;
 } 
 
-.text{
-  padding: 30px 60px;
+.about-me{
+  padding: 0px 60px 0px 60px;
+}
+
+.body-text{
+  margin: 10px;
 }
 
 .containerheader{ /*head image*/
@@ -205,98 +205,101 @@ nav li:first-child{ /*logo left side*/
 
 @media(max-width:800px){
   .hide-on-mobile{
-      display: none;
+    display: none;
   }
   .menu-but{
-      display: block;
+    display: block;
   }
 }
 
 /*two colums*/
-.box{
-    display:grid;
-    gap: 30px;
+.even-colums4{
+  display:grid;
+  gap: 30px;
 }
 
 @media (min-width:700px){
-    .box{
-        grid-auto-flow: column;
-        grid-auto-columns: 1fr;
-        gap:60px;
-    }
+  .even-colums4{
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap:60px;
+  }
 }
 
-/*contact*/
-.text{
-padding: 0px 30px 0px 60px;
+.about-me-text{
+  padding: 0px 20px 10px 10px;
 }
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-    border: 1px solid #205165; /* Gray border */
-    background-color: #205165;
-    color: #f2f2f2;
-    width: 100%; 
-    padding: 8px; 
-    border-radius: 10px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
+  border: 1px solid #205165; /* Gray border */
+  background-color: #205165;
+  color: #f2f2f2;
+  width: 100%; 
+  padding: 8px; 
+  border-radius: 10px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
   
 ::placeholder{ /*color on placeholder*/
-    color: #cfcfcf;
+  color: #cfcfcf;
 }
 
-  /* Style the submit button*/
+/* Style the submit button*/
 input[type=submit] {
-    background-color:#205165;
-    color: #f2f2f2;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 10px; /* Rounded borders */
-    cursor: pointer;
-    margin-left: 41%;
-  }
+  background-color:#205165;
+  color: #f2f2f2;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px; /* Rounded borders */
+  cursor: pointer;
+  margin-left: 41%;
+}
 
-  /* Hover sumit button*/
+/* Hover sumit button*/
 input[type=submit]:hover {
-    background-color:#2f7593;
-  }
+  background-color:#2f7593;
+}
+
+.container{
+  margin: 30px;
+}
 
 /*footer*/
 .footer{
-    display: flex;
-    background-color: #364055;
-    color: #f2f2f2;
-    padding: 0px 30px;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 100%;
-  }
+  display: flex;
+  background-color: #364055;
+  color: #f2f2f2;
+  padding: 0px 30px;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
   
-  .footer div{
-    text-align: center;
-    padding: 30px 30px 15px 30px;
-  }
+.footer div{
+  text-align: center;
+  padding: 30px 30px 15px 30px;
+}
   
-  .col-3{
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-  }
+.col-3{
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
   
-  .footerlinks{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
+.footerlinks{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
   
-  @media (min-width:800px){
-    .footer{
-        grid-auto-flow: column;
-        grid-auto-columns: 1fr;
-    }
+@media (min-width:800px){
+  .footer{
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
   }
+}

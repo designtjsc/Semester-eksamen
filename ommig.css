@@ -205,90 +205,100 @@ nav li:first-child{ /*logo left side*/
 
 @media(max-width:800px){
   .hide-on-mobile{
-      display: none;
+    display: none;
   }
   .menu-but{
-      display: block;
+    display: block;
   }
 }
 
-.even-colums{
-    display:grid;
-    gap:100px;
-    padding: 30px;
+/*Main*/
+.even-colums3{
+  display: grid;
+  grid-row: auto;
+  gap:100px;
+  padding: 30px;
 }
 
 .photo{ /*photo of me*/
-    height: 700px;
-    align-items: center;
-}
-.box{ /*container for box's*/
-    display: flex;
-    flex-wrap: wrap;
-    align-items:center;
-    padding: 120px 190px 190px 120px;
-    gap:200px;
-    background-color: aqua;
+  height: 400px;
+  width: 280px;
+  align-items: center;
 }
 
-.image{ /*size for icons*/
-    height: 70px;
-    width: 70px;
+.box{ /*container for box's*/
+  display: flex;
+  flex-wrap: wrap;
+  height: 40px;
+  gap:30px;
+  padding: 60px;
+  background-color: aqua;
+}
+
+.image-icons{ /*size for icons*/
+  height: 40px;
+  width: 40px;
 }
 .box > div{ /*box for icons*/
-    width: 70px;
-    height: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-
+  width: 40px;
+  height: 1px;
+  line-height: 75px;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 60px
 }
 
 @media (min-width:700px){
-    .even-colums{
-        grid-auto-flow: column;
-        gap:100px;
-    }
+  .even-colums{
+    grid-auto-flow: column;
+    gap:100px;
+  }
+}
+
+@media(max-width:700px){
+  .box{
+    display: flex;
+  }
 }
 
 /*text style*/
 .text{
-    text-align: center;
-    padding: 30px 60px;
+  text-align: center;
+  padding: 30px 60px;
 }
 
 /*footer*/
 .footer{
-    display: flex;
-    background-color: #364055;
-    color: #f2f2f2;
-    padding: 0px 30px;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 100%;
-  }
+  display: flex;
+  background-color: #364055;
+  color: #f2f2f2;
+  padding: 0px 30px;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+}
   
-  .footer div{
-    text-align: center;
-    padding: 30px 30px 15px 30px;
-  }
+.footer div{
+  text-align: center;
+  margin: 30px 5px 15px 5px;
+}
   
-  .col-3{
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-  }
+.col-3{
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
   
-  .footerlinks{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
+.footerlinks{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
   
-  @media (min-width:800px){
-    .footer{
-        grid-auto-flow: column;
-        grid-auto-columns: 1fr;
-    }
+@media (min-width:800px){
+  .footer{
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
   }
+}
