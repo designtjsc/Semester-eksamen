@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="ommig.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Præsentationsportsfolio</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 <!--header-->
@@ -13,16 +16,16 @@
         <!--nav for mobile-->
         <ul class="sidebar">
             <li onclick=hidesidebar()><a href="index.html"><img src="/img/closebutton.png" alt="" height="30"></a></li>
-            <il><a href="projekter.html">Projekter</a></il>
-            <il><a href="ommig.html">Om mig</a></il>
-            <il><a href="kontakt.html">Kontakt</a></il>
+            <li><a href="projekter.html">Projekter</a></li>
+            <li><a href="ommig.html">Om mig</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
         <!--nav for computer-->
         <ul>
-            <li><a href="index.html"><img src="/img/logo.png" alt="" height="85"></a></li>
-            <il class="hide-on-mobile"><a href="projekter.html">Projekter</a></il>
-            <il class="hide-on-mobile"><a href="ommig.html">Om mig</a></il>
-            <il class="hide-on-mobile"><a href="kontakt.html">Kontakt</a></il>
+            <li><a href="index.html"><img src="/img/home.svg" alt="" height="85"></a></li>
+            <li class="hide-on-mobile"><a href="projekter.html">Projekter</a></li>
+            <li class="hide-on-mobile"><a href="ommig.html">Om mig</a></li>
+            <li class="hide-on-mobile"><a href="kontakt.html">Kontakt</a></li>
             <li class="menu-but" onclick=showsidebar()><a href="#"><img src="/img/burgermenu.png" alt="" height="13"></a></li>
         </ul>
     </nav>
@@ -32,56 +35,60 @@
 </header>
 <!--main-->
     <main>
-        <section class="text">
-            <h2 class="fs-heading fw-bold">om mig</h2>
-            <p class="fs-body fw-regular">Mit navn er Thea Schärfe. Jeg er 22 år gammel og kommer fra Odense. Jeg er studerende som multimedie designer. 
-                Jeg lægger stort arbejde i at levere et godt design og elsker at fordybe mig med detaljerne. 
-                
-                Jeg har altid været passioneret for grafisk design og fotografi. Jeg er typen som ofte ser de mere finurlige detaljer som andre ikke lige opdager. Jeg tager gerne på tur med mit kamera og tager billeder af en ny vinkel som man ikke ser til hverdag, og få inspiration fra arkitektur samt naturen. 
-                
-                Jeg kan arbejde inden for mange dele af multimedia design. De områder jeg er stærkest i er produktsalg, logo design. Det kan beskrives som arbejde i illustrator og photoshop, samt med kamera.
-            </p>
+        <section id="ommig-text">
+            <div class="container">
+                <h2 class="fs-heading fw-bold">Om mig</h2>
+                <p class="fs-body fw-regular">Mit navn er Thea Schärfe. Jeg er 22 år gammel og kommer fra Odense. Jeg er studerende som multimedie designer. 
+                    Jeg lægger stort arbejde i at levere et godt design og elsker at fordybe mig med detaljerne. 
+                    
+                    Jeg har altid været passioneret for grafisk design og fotografi. Jeg er typen som ofte ser de mere finurlige detaljer som andre ikke lige opdager. Jeg tager gerne på tur med mit kamera og tager billeder af en ny vinkel som man ikke ser til hverdag, og få inspiration fra arkitektur samt naturen. 
+                    
+                    Jeg kan arbejde inden for mange dele af multimedia design. De områder jeg er stærkest i er produktsalg, logo design. Det kan beskrives som arbejde i illustrator og photoshop, samt med kamera.
+                </p>
+            </div>
         </section>
     
-        <section>
-            <div class="container">
-                <div class="even-colums">
-                    <div class="box">
-                        <div><img src="/img/Adobe_Illustrator_CC_icon.svg.png" alt="" class="image"></div>
-                        <div><img src="/img/Adobe_Photoshop_CC_icon.svg.png" alt="" class="image"></div>
-                        <div><img src="/img/figma.png" alt="" class="image"></div>
-                        <div><img src="/img/photo-icon.png" alt="" class="image"></div>
-                        <div><img src="/img/kamera.png" alt="" class="image"></div>
-                        <div><img src="/img/UI-UX.png" alt="" class="image"></div>
-                    </div>
-                    <div>
-                        <img src="/img/photo.png"  alt="projekt billede" class="photo">
-                    </div>
+        <section class="container">
+            <div id="even-colums3"> 
+                <div id="box">
+                    <div><img src="/img/Adobe_Illustrator_CC_icon.svg.png" alt="" class="image-icons"></div>
+                    <div><img src="/img/Adobe_Photoshop_CC_icon.svg.png" alt="" class="image-icons"></div>
+                    <div><img src="/img/figma.png" alt="" class="image-icons"></div>
+                    <div><img src="/img/photo-icon.png" alt="" class="image-icons"></div>
+                    <div><img src="/img/kamera.png" alt="" class="image-icons"></div>
+                    <div><img src="/img/UI-UX.png" alt="" class="image-icons"></div>
+                </div>
+                <div id="photo">
+                    <img src="/img/photo.png"  alt="Photo of me">
                 </div>
             </div>
+           
+                    
         </section>
     </main>
+
 <!--footer-->
-    <footer>
-        <div class="footer">
-            <div class="col-1">
-                <p class="fs-body fw-bold">Thea Schärfe</p>
-            </div>
-            <div class="col-2">
-                <p>Email: tjsc61999@ude.ucl.dk</p>
-                <p>Telefon: +4523909592</p>
-            </div>
-            <div class="col-3 ">
-                <p class="social">Sociale medier</p>
-                <div class="footerlinks">
-                    <a href="#"><img src="/img/linkd.logo.png" alt="" height="30px"></a>
-                    <a href="#"><img src="/img/instagram.logo.png" alt="" height="30px"></a>
-                </div>     
-            </div>
+<footer>
+    <div class="footer">
+        <div class="col-1">
+            <p class="fs-body fw-bold">Thea Schärfe</p>
         </div>
-    </footer>
-    <!--javesript-->
-   <script>
+        <div class="col-2">
+            <p>Email: tjsc61999@edu.ucl.dk</p>
+            <p>Telefon: +4523909592</p>
+        </div>
+        <div class="col-3 ">
+            <p class="social">Sociale medier</p>
+            <div class="footerlinks">
+                <a href="https://www.linkedin.com/in/thea-scharfe-1a8772216/"><img src="/img/linkd.logo.png" alt="" height="25"></a>
+                <a href="https://www.instagram.com/theascharfe/?hl=da"><img src="/img/instagram.logo.png" alt="" height="25"></a>
+            </div>     
+        </div>
+    </div>
+   </footer>   
+</footer> 
+<!--javesript-->
+<script>
     function showsidebar(){
         const sidebar = document.querySelector('.sidebar')
         sidebar.style.display ='flex'
