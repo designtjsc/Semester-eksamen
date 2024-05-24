@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <title>Præsentationsportsfolio</title>
-    <link rel="stylesheet" href="projekter.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
             </ul>
             <!--nav for computer-->
             <ul>
-                <li><a href="index.html"><img src="/img/logo.png" alt="" height="85"></a></li>
+                <li><a href="index.html"><img src="/img/home.svg" alt="" height="85"></a></li>
                 <il class="hide-on-mobile"><a href="projekter.html">Projekter</a></il>
                 <il class="hide-on-mobile"><a href="ommig.html">Om mig</a></il>
                 <il class="hide-on-mobile"><a href="kontakt.html">Kontakt</a></il>
@@ -37,21 +37,23 @@
     <main>
         <section>
             <div class="container">
-                <h1 class="fs-heading fw-bold">
-                    Projekter
-                </h1>
-                <p class="fs-body fw-regular">
-                    Her kan du se et udvalg er nogle af de projekter jeg har arbejdet på. Du kan med fordel sætte musen hen over for at få en forklaring på, hvad det er du kigger på. 
-                </p>
+                <div class="body-text">
+                    <h1 class="fs-heading fw-bold">
+                        Projekter
+                    </h1>
+                    <p class="fs-body fw-regular">
+                        Her kan du se et udvalg er nogle af de projekter jeg har arbejdet på. Du kan med fordel sætte musen hen over for at få en forklaring på, hvad det er du kigger på. 
+                    </p>
+                </div>
             </div>
         </section>
         <section>
             <div class="container">
-                <div class="even-colums">
+                <div class="even-colums1">
                     <div class="work"> 
                         <img src="/img/pinving.png" alt="Avatar" class="image">
                         <div class="hoverlayer">
-                            <div class="text">
+                            <div class="hover-text">
                                 <h3>produkt</h3>
                                 <p>beskrivelse</p>
                             </div>
@@ -61,18 +63,18 @@
                     <div class="work"> 
                         <img src="/img/monky.png" alt="Avatar" class="image">
                         <div class="hoverlayer">
-                            <div class="text">
+                            <div class="hover-text">
                                 <h3>produkt</h3>
                                 <p>beskrivelse</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="even-colums">
+                <div class="even-colums1">
                     <div class="work"> 
                         <img src="/img/Potræt_1.png" alt="Avatar" class="image">
                         <div class="hoverlayer">
-                            <div class="text">
+                            <div class="hover-text">
                                 <h3>produkt</h3>
                                 <p>beskrivelse</p>
                             </div>
@@ -81,18 +83,18 @@
                     <div class="work"> 
                         <img src="/img/samlebog.jpg" alt="Avatar" class="image">
                         <div class="hoverlayer">
-                            <div class="text">
+                            <div class="hover-text">
                                 <h3>produkt</h3>
                                 <p>beskrivelse</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="even-colums">
+                <div class="even-colums1">
                     <div class="work"> 
-                        <img src="/img/logo designs.png" alt="Avatar" class="image">
+                        <img src="/img/logos-svg.svg" alt="Avatar" class="image">
                         <div class="hoverlayer">
-                            <div class="text">
+                            <div class="hover-text">
                                 <h3>produkt</h3>
                                 <p>beskrivelse</p>
                             </div>
@@ -101,7 +103,7 @@
                     <div class="work"> 
                         <img src="/img/pinving.png" alt="Avatar" class="image">
                         <div class="hoverlayer">
-                            <div class="text">
+                            <div class="hover-text">
                                 <h3>produkt</h3>
                                 <p>beskrivelse</p>
                             </div>
@@ -114,24 +116,24 @@
 
 
 <!-- Footer indhold --> 
-    <footer>
-        <div class="footer">
-            <div class="col-1">
-                <p class="fs-body fw-bold">Thea Schärfe</p>
-            </div>
-            <div class="col-2">
-                <p>Email: tjsc61999@ude.ucl.dk</p>
-                <p>Telefon: +4523909592</p>
-            </div>
-            <div class="col-3 ">
-                <p class="social">Sociale medier</p>
-                <div class="footerlinks">
-                    <a href="#"><img src="/img/linkd.logo.png" alt="" height="25px"></a>
-                    <a href="#"><img src="/img/instagram.logo.png" alt="" height="25px"></a>
-                </div>     
-            </div>
+<footer>
+    <div class="footer">
+        <div class="col-1">
+            <p class="fs-body fw-bold">Thea Schärfe</p>
         </div>
-    </footer> 
+        <div class="col-2">
+            <p>Email: tjsc61999@edu.ucl.dk</p>
+            <p>Telefon: +4523909592</p>
+        </div>
+        <div class="col-3 ">
+            <p class="social">Sociale medier</p>
+            <div class="footerlinks">
+                <a href="https://www.linkedin.com/in/thea-scharfe-1a8772216/"><img src="/img/linkd.logo.png" alt="" height="25"></a>
+                <a href="https://www.instagram.com/theascharfe/?hl=da"><img src="/img/instagram.logo.png" alt="" height="25"></a>
+            </div>     
+        </div>
+    </div>
+   </footer>   
     <!--javesript-->
    <script>
     function showsidebar(){
