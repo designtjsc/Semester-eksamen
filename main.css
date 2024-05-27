@@ -104,6 +104,7 @@ body{
     font-weight: var(--fw-regular);
     color: #29292C;
     height: 100%;
+    background-color: #f2f2f2;
 } 
   
 .body-text{
@@ -221,6 +222,7 @@ nav li:first-child{ /*logo left side*/
 .even-colums{
     display:grid;
     gap:30px;
+    object-fit: contain;
 }
   
 @media (min-width:800px){
@@ -229,18 +231,12 @@ nav li:first-child{ /*logo left side*/
       grid-auto-columns: 1fr;
    }
 }
-  
-.image-logos{
-    background-image: url(/img/logos-svg.svg) ;
-    background-size:contain;
-    background-repeat: no-repeat;
-}
+
 /* projekter page */
-/* two projects beside echother*/
-.even-colums1{
+.even-colums1{ /* two projects beside echother*/
     display:grid;
     gap:30px;
-    padding: 30px;
+    padding-bottom: 30px;
 }
   
 @media (min-width:700px){
@@ -250,19 +246,40 @@ nav li:first-child{ /*logo left side*/
     gap:30px;
    }
 }
-  
+
+#even-colums1-2{ /* two projects beside echother, without padding*/
+    display:grid;
+    gap:30px; 
+}
+
+@media (min-width:700px){
+    #even-colums1-2{
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+      gap:30px;
+     }
+  }
+
 /*hover over img*/
 .work{ /*i can controle size of image here*/
     position: relative;
-    width: 90%;
+    border: #49A0C5;
+    border-style: solid;  
+    border-radius: 10px;
 }
   
-.image{
+.work img{
     display: block;
-    width: 100%;
-    max-height: 800px;
+    max-height: 455px;
+    margin: auto;
 }
-  
+
+#monkey{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hoverlayer {
     position: absolute;
     top: 0;
@@ -274,14 +291,28 @@ nav li:first-child{ /*logo left side*/
     opacity: 0;
     transition: .5s ease;
     background-color: #205165;
+    border-radius: 8px;
 }
   
 .work:hover .hoverlayer{
-    opacity: 0.7;
+    opacity: 0.9;
 }
   
+.hover-text a:link{
+    color: #f2f2f2;
+}
+.hover-text a:visited{
+    color:#f2f2f2;
+}
+.hover-text a:hover{
+    color: #29292C;
+}
+.hover-text a:active{
+    color: #29292C;
+}
+
 .hover-text{
-    color: white;
+    color: #f2f2f2;
     font-size: 20px;
     position: absolute;
     /*text alignment*/
@@ -290,7 +321,6 @@ nav li:first-child{ /*logo left side*/
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 /* Om Mig page */
@@ -353,7 +383,7 @@ nav li:first-child{ /*logo left side*/
   
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-    border: 1px solid #205165; /* Gray border */
+    border: 1px solid #205165; /* blue border */
     background-color: #205165;
     color: #f2f2f2;
     width: 100%; 
